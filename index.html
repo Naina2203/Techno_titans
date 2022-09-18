@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techno-titans</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\Techno.png" alt="Devblog's logo" width="150" class="logo-light">
+          <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\Techno.png" alt="Devblog's logo" width="150" class="logo-dark">
+        </a>
+        <div class="flex-wrapper">
+
+
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+          <input id="searchbar" onkeyup="search_blog()" type="text"
+          name="search" placeholder="Search blogs..">
+          <ul class="desktop-nav">
+
+         
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, we are <b>Techno&nbsp;Titans</b>.
+            <br>
+          </h1>
+
+         
+
+          <div class="btn-group">
+            <a href="mailto:nainamadan2203@gmail.com" class="btn btn-primary">Contact Us</a>
+           
+          </div>
+
+        </div>
+        
+        <div class="right">
+
+          
+          <div class="img-box">
+            
+           
+            <div class="main-content">
+              <h2><centre>Write your text here.....</centre></h2>
+              <div class ="text-editor-header">
+             
+                  <button type="button" class="btn" data-element="bold">
+                      <i class ="fa fa-bold"></i>
+                  </button>
+                  <button type="button" class ="btn" data-element="italic">
+                      <i class="fa fa-italic"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="underline">
+                      <i class="fa fa-underline"></i> 
+                  </button>
+                  <button type="button" class="btn" data-element="insertunorderedList">
+                      <i class="fa fa-list-ul"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="insertorderedList">
+                      <i class="fa fa-list-ol"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="createLink">
+                      <i class="fa fa-link"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="justifyLeft">
+                      <i class="fa fa-align-left"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="justifyCenter">
+                      <i class="fa fa-align-center"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="justifyRight">
+                      <i class="fa fa-align-right"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="justifyFull">
+                      <i class="fa fa-align-justify"></i>
+                  </button>
+                  <button type="button" class="btn" data-element="insertImage">
+                      <i class="fa fa-image"></i>
+                  </button>
+              </div>
+              <!--end of text header-->
+              <!--content-->
+              <div class="content" contenteditable="true"></div>
+              <!-- end of content-->
+          </div>
+          
+           
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2">Latest Blog Post</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\docker.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+               <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjG0a3YkJ36AhXljeYKHWvfBngQFnoECFYQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase&usg=AOvVaw3mi3mzwb8TR9yaGJQAKOqU"> <button class="blog-topic text-tiny">Database</button></a>
+
+                <h3>
+                  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwinrNXoo5z6AhXI4TgGHVHUAUUQFnoECAwQAQ&url=https%3A%2F%2Fdev.to%2Fricdev2%2Fbuilding-microservices-with-dropwizard-mongodb--docker--o30&usg=AOvVaw3Frwo5RYu890KPVOc66oUl" class="h3">
+                    Building microservices with Dropwizard, MongoDB & Docker
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  This NoSQL database oriented to documents (by documents like JSON) combines some of the features from
+                  relational
+                  databases, easy to use and the multi-platform is the best option for scale up and have fault
+                  tolerance, load balancing,
+                  map reduce, etc.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    
+                  </div>
+
+                  <div class="wrapper">
+                    
+
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Jan 17, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\web_page.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+              
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwju_pyIkZ36AhXa63MBHZRkDYAQFnoECCQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWeb_performance&usg=AOvVaw2LGrjbbQJXM1QeqB0UmoU6">  <button class="blog-topic text-tiny">Web Performance</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQ2NGupJz6AhWP6jgGHUftAmMQFnoECAkQAQ&url=https%3A%2F%2Flitekart.in%2Fblog%2Floading-web-pages-fast-on-a-20-feature-phone-by-addy-osmani&usg=AOvVaw1S7v24bpwHx45-DIjYjrja" class="h3">Fast web page loading on a $20 feature phone</a></h3>
+
+                <p class="blog-text">
+                  Feature phones are affordable (under $20-25), low-end devices enabling 100s of millions of users in
+                  developing countries
+                  to leverage the web. Think of them as a light version of a smart phone.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    
+                  </div>
+
+                  <div class="wrapper">
+                   
+
+                    <p class="text-sm">
+                      <time datetime="2021-12-10">Dec 10, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT2M">2 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\dynamic_database.png" alt="Accessibility Tips for Web Developers" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwif_8GjkZ36AhVyCbcAHVD-DlIQFnoECCYQAQ&url=https%3A%2F%2Fweb.dev%2Faccessibility%2F&usg=AOvVaw2gU-X0h6JsWLRDWNrQFhw0">  <button class="blog-topic text-tiny">Accessibility</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixqLnLuJz6AhXURHwKHUJ-CkQQFnoECAcQAQ&url=https%3A%2F%2Fweb.dev%2Fa11y-tips-for-web-dev%2F&usg=AOvVaw17bXy3NJgBYkBEIuB7eqVM" class="h3">Accessibility Tips for Web Developers</a></h3>
+
+                <p class="blog-text">
+                  It's awesome to build sites that are inclusive and accessible to everyone. There are at least six key
+                  areas of
+                  disability we can optimize for: visual, hearing, mobility, cognition, speech and neural. Many tools
+                  and resources can
+                  help here, even if you're totally new to web accessibility.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    
+                  </div>
+
+                  <div class="wrapper">
+                   
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-28">Nov 28, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\dd.png" alt="Dynamically Securing Databases using Hashicorp Vault"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+               <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjG0a3YkJ36AhXljeYKHWvfBngQFnoECFYQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase&usg=AOvVaw3mi3mzwb8TR9yaGJQAKOqU"> <button class="blog-topic text-tiny">Database</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiWh7XeuJz6AhWvAbcAHUblAkIQFnoECAkQAQ&url=https%3A%2F%2Fwww.digitalonus.com%2Fdynamically-securing-databases-using-hashicorp-vault%2F&usg=AOvVaw3VunKJXzMfgUUwwhsCfBt8" class="h3">Dynamically Securing Databases using Hashicorp Vault</a></h3>
+
+                <p class="blog-text">
+                  Nowadays, it's hard to profoundly talk about security in the IT industry, since it has to be
+                  considered on so many
+                  different levels: from securing code chunks, securing containers, up to securing complex
+                  infrastructures and defining
+                  strong authorization and authentication policies across the enterprise.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    
+                  </div>
+
+                  <div class="wrapper">
+                   
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-20">Nov 20, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\Downloads\al.png"
+                  alt="Adaptive Loading - Improving Web Performance on low-end devices" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwju_pyIkZ36AhXa63MBHZRkDYAQFnoECCQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWeb_performance&usg=AOvVaw2LGrjbbQJXM1QeqB0UmoU6">   <button class="blog-topic text-tiny">Web Performance</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwilwt7wuJz6AhXxj-YKHcGVBxkQFnoECAUQAw&url=https%3A%2F%2Fweb.dev%2Fadaptive-loading-cds-2019%2F&usg=AOvVaw1P0lXsyx98OhklabvrNRKo" class="h3">Adaptive Loading - Improving Web Performance on low-end devices</a></h3>
+
+                <p class="blog-text">
+                  Adaptive Loading: Do not just respond based on screen size, adapt based on actual device hardware.
+                  Any user can have a slow experience. In a world with widely varying device capabilities, a "one-size"
+                  fits all
+                  experience may not always work. Sites that delight users on high-end devices can be unusable on
+                  low-end ones,
+                  particularly on median mobile and desktop hardware and in emerging markets.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                   
+                  </div>
+
+                  <div class="wrapper">
+                  
+                    <p class="text-sm">
+                      <time datetime="2021-11-10">Nov 10, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\dont_develop.png"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-vqO3mZ36AhX-7TgGHaosA48QFnoECDIQAQ&url=https%3A%2F%2Fweb.dev%2Faccessibility%2F&usg=AOvVaw2gU-X0h6JsWLRDWNrQFhw0">  <button class="blog-topic text-tiny">Accessibility</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi5-Ny7tZz6AhWSFbcAHbCYCC4QFnoECAsQAQ&url=https%3A%2F%2Feevis.codes%2Fblog%2F2021-05-28%2Fdont-develop-just-for-yourself-a-developers-checklist-to-accessibility%2F&usg=AOvVaw2Lm8ZU_jpviJxxP8IVtRod" class="h3">Don't Develop Just for Yourself - A Developer's Checklist to Accessibility</a>
+                </h3>
+
+                <p class="blog-text">
+                  We, as developers, tend to develop sites unconsciously for people like ourselves. If we don't actively
+                  pay attention,
+                  the sites are often accessible only for certain types of people: Sighted mouse-users, who have good
+                  fine motor skills
+                  and are good at using computers.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                 
+                  </div>
+
+                  <div class="wrapper">
+                  
+                    <p class="text-sm">
+                      <time datetime="2021-10-25">Oct 25, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\blog-7.png"
+                  alt="Building a Restful CRUD API with Node JS, Express, and MongoDB" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9r-GQmZ36AhXr-TgGHbb2C1UQFnoECC8QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase&usg=AOvVaw3mi3mzwb8TR9yaGJQAKOqU">    <button class="blog-topic text-tiny">Database</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjWodaStpz6AhXm23MBHQ_eCuEQFnoECBgQAQ&url=https%3A%2F%2Fdev.to%2Fsuhailkakar%2Fbuilding-a-restful-crud-api-with-node-js-express-and-mongodb-1541&usg=AOvVaw3V1wpk2VmZRWhZqigaZ-9z" class="h3">Building a Restful CRUD API with Node JS, Express, and MongoDB</a></h3>
+
+                <p class="blog-text">
+                  Application Programming Interface is the abbreviation for API. An API is a software interface that
+                  enables two apps to
+                  communicate with one another. In other words, an API is a messenger that sends your request to the
+                  provider and then
+                  returns the response to you.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                 
+                  </div>
+
+                  <div class="wrapper">
+                 
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-15">Oct 15, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\blog-8.png" alt="Monitoring Performance with the PageSpeed Insights API"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0na73mJ36AhW4xTgGHVq3A6gQFnoECCIQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWeb_performance&usg=AOvVaw2LGrjbbQJXM1QeqB0UmoU6">   <button class="blog-topic text-tiny">Web Performance</button></a>
+
+                <h3><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjYlvbFtpz6AhWTfSsKHedCBfMYABABGgJzZg&ohost=www.google.com&cid=CAESauD2kPnRmcygHizam0QFRLxooob0peJRCQu5Ee1InxTwXjcl6ILr-0Q5jW-mPe7dzDkRWEQjz_ksoHrxQ2GG23d8tyqPfk80iczqFtmQ1eTBIFsUraJPYuG8VWbL3V1f2biU6UrjT5YRREY&sig=AOD64_1XCq3V759raamAec8XVGJqnOpdHg&q&adurl&ved=2ahUKEwinv-_Ftpz6AhUug2MGHQGiAyYQ0Qx6BAgEEAE" class="h3">Monitoring Performance with the PageSpeed Insights API</a></h3>
+
+                <p class="blog-text">
+                  The PageSpeed Insights API provides free access to performance monitoring for web pages and returns
+                  data with
+                  suggestions for how to improve. The V5 API includes lab data from Lighthouse and real-world data from
+                  the Chrome User
+                  Experience Report (CrUX).
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+              
+                  </div>
+
+                  <div class="wrapper">
+                  
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-03">Oct 3, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\blog-9.png" alt="The best web accessibility tools for developers in 2021"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwihg-PfmJ36AhUc1jgGHdHHD0AQFnoECBIQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAccessibility&usg=AOvVaw03YCy2lV3op_jYRn-RgnVb">  <button class="blog-topic text-tiny">Accessibility</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjejqTWtpz6AhVL7TgGHapODDEQFnoECAQQAw&url=https%3A%2F%2Fdev.to%2Fjaketracey%2Fthe-best-web-accessibility-tools-for-developers-in-2021-8c8&usg=AOvVaw1c21yRgZjp-0NbXPhjFxoN" class="h3">The best web accessibility tools for developers in 2021</a>
+                </h3>
+
+                <p class="blog-text">
+                  The quality of the tools you use defines the speed with which you can diagnose and resolve problems.
+                  Each year the landscape changes dramatically in web technologies, and of late the tooling for
+                  accessibility is no
+                  exception.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                 
+                  </div>
+
+                  <div class="wrapper">
+                 
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-13">Sep 13, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\blog-10.png"
+                  alt="How to connect a React frontend with a NodeJS/Express backend" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj9kPG5mJ36AhWiJrcAHcXCDi4QFnoECDMQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase&usg=AOvVaw3mi3mzwb8TR9yaGJQAKOqU">  <button class="blog-topic text-tiny">Database</button></a>
+
+                <h3><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjR2cjmtpz6AhVO8jgGHU-MBTAQFnoECAQQAw&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-connect-node-js-with-react-js%2F%23%3A~%3Atext%3Dexport%2520default%2520App%253B%2CReactJS%2520is%2520connected%2520with%2520NodeJS.&usg=AOvVaw1L_IruW5Io6ksl0_ZNA-0N" class="h3">How to connect a React frontend with a NodeJS/Express backend</a></h3>
+
+                <p class="blog-text">
+                  The MERN (MongoDB, Express, React, NodeJS) stack is very popular for making full stack applications,
+                  utilizing
+                  Javascript for both the backend and frontend as well as a document-oriented or non relational database
+                  (MongoDB),
+                  meaning that it's structured like JSON rather than a large excel sheet like SQL databases are.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                
+                  </div>
+
+                  <div class="wrapper">
+                  
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-21">Sep 21, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+
+                      <a href="#" class="like-button">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
+                        </a>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          
+        </div>
+
+
+
+
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+
+          <div class="topics">
+
+            <h2 class="h2">Topics</h2>
+
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-1-KX-5v6AhXMxjgGHQxvDVsQFnoECFQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase&usg=AOvVaw3mi3mzwb8TR9yaGJQAKOqU" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+
+              <p>Database</p>
+            </a>
+
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjL8qnd-5v6AhWU-DgGHRbyCjkQFnoECEcQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAccessibility&usg=AOvVaw03YCy2lV3op_jYRn-RgnVb" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+
+              <p>Accessibility</p>
+            </a>
+
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDyKK9-5v6AhWu9zgGHbmqARkQFnoECCgQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWeb_performance&usg=AOvVaw2LGrjbbQJXM1QeqB0UmoU6" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <p>Web Performance</p>
+            </a>
+
+          </div>
+
+          <div class="tags">
+
+            <h2 class="h2">Tags</h2>
+
+            <div class="wrapper">
+
+             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjd3f66_Jv6AhUB8DgGHcZxBGcQFnoECAcQAQ&url=https%3A%2F%2Fwww.mongodb.com%2F&usg=AOvVaw2ODprZpw7B6asXJGVwvA-G"> <button class="hashtag">#mongodb</button></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjK9Lrn_Jv6AhXj6jgGHYmSDN8QFnoECAkQAQ&url=https%3A%2F%2Fnodejs.org%2F&usg=AOvVaw1tY2p-vJFWJmxWlq4sTxCn"><button class="hashtag">#nodejs</button></a>
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjazIGJ_Zv6AhVO-TgGHRoGDgQQFnoECAkQAQ&url=https%3A%2F%2Fwww.a11yproject.com%2F&usg=AOvVaw2xaVaV56h3tFbDHWutMQNt"><button class="hashtag">#a11y</button></a>
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi63JOc_Zv6AhUEzjgGHTfJBpoQFnoECA8QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMobility&usg=AOvVaw1uihNeOoI_KuPdhD23kXEH"><button class="hashtag">#mobility</button></a>
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjc2pG8_Zv6AhUX6jgGHZLiDpAQFnoECDgQAQ&url=https%3A%2F%2Fwww.inclusiveemployers.co.uk%2Fabout%2Fwhat-is-workplace-inclusion%2F&usg=AOvVaw2JI0IeSsOqWuQhcesK5FT-"><button class="hashtag">#inclusion</button></a>
+             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj48s3M_Zv6AhUs9DgGHSaCCfsQFnoECCAQAQ&url=https%3A%2F%2Fwww.keycdn.com%2Fblog%2Ftags%2Fwebperf&usg=AOvVaw0HiYZsmqkmgIH_bF1MMWig"> <button class="hashtag">#webperf</button></a>
+             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiTk-Pr_Zv6AhVm7zgGHbxYDCcQFnoECDQQAQ&url=https%3A%2F%2Fdevelopers.google.com%2Foptimize%2Fdevguides%2Fexperiments&usg=AOvVaw0kR003mRYAKvOWobmhr1v-"> <button class="hashtag">#optimize</button></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjRxqmJ_pv6AhXr3zgGHd_KBTEQFnoECBEQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPerformance&usg=AOvVaw1SQISPKn3LG68HNLoy6WR9">  <button class="hashtag">#performance</button></a>
+
+            </div>
+
+          </div>
+
+          <div class="contact">
+
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Do you want to learn more about how I can help your company overcome problems? Let us have a
+                conversation.
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi15ee6-Zv6AhV0-jgGHaJJCiwQjBB6BAgMEAE&url=https%3A%2F%2Fsupport.discord.com%2Fhc%2Fen-us%2Fcommunity%2Fposts%2F360056220432-Login&usg=AOvVaw2TY_CsuopU4hy9TI9atEch" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjUtqGd-Zv6AhW66jgGHR5cBukQFnoECAgQAQ&url=https%3A%2F%2Ftwitter.com%2Flogin&usg=AOvVaw3swNPrVfKaBGiX8TGfSpkN" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj4-rmk95v6AhUl3jgGHaQ6AdkQjBB6BAgPEAE&url=https%3A%2F%2Fwww.facebook.com%2Flogin%2F&usg=AOvVaw2NEj8NwnxhOue64pSijk7e>" class="icon-box facebook">
+                   
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+               
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="newsletter">
+
+            <h2 class="h2">Newsletter</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+              </p>
+
+              <form action="subscribe.html" method="post">
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\Techno.png" alt="Techno-titans" width="150" class="logo-light">
+        
+          
+          <img src="C:\Users\Naina Madan\OneDrive\Desktop\images\Techno.png" alt="Techno-titans" width="150" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjq-s65gZz6AhVj2DgGHWSmACQQFnoECAcQAQ&url=https%3A%2F%2Fblog-guru.net%2Fadvertise-with-us%2F&usg=AOvVaw2UsqgNTQrgr3KT9sg7iYGX" class="footer-link">Advertise with us</a>
+          </li>
+
+          
+
+          <li>
+           <p style="color:gray">Contact Us-6367981234</p>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjiscnTgJz6AhXw7jgGHfkkDOQQFnoECAQQAw&url=https%3A%2F%2Fwww.privacypolicies.com%2Fblog%2Fprivacy-policy-blogger-blogspot%2F%23%3A~%3Atext%3DBloggers%2520don%27t%2520need%2520a%2Cto%2520post%2520a%2520Privacy%2520Policy.&usg=AOvVaw0TwAXAVvJSo3fUpqHHlTH1" class="footer-link">Privacy Notice</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj57_OpgJz6AhVe-DgGHZnxA2cQFnoECAYQAw&url=https%3A%2F%2Fwww.termsfeed.com%2Fblog%2Flegal-agreements-blogs%2F%23%3A~%3Atext%3DA%2520Terms%2520of%2520Service%2520(also%2Cboth%2520you%2520and%2520your%2520users.&usg=AOvVaw1ClUWXCkzS3sq6o81HkQud" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/like.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
